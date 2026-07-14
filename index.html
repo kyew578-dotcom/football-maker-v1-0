@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#1565c0">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Football Maker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>⚽ Football Maker</h1>
+
+</header>
+
+<div class="dashboard">
+
+<div class="sidebar">
+
+<h2>MENU</h2>
+
+<a href="index.html">🏠 Dashboard</a>
+
+<a href="teams.html">👥 Teams</a>
+
+<a href="leagues.html">🏆 Leagues</a>
+
+<a href="tournaments.html">🥇 Tournaments</a>
+
+<a href="fixtures.html">📅 Fixtures</a>
+
+<a href="table.html">📊 League Table</a>
+
+<a href="match.html">⚽ Match Centre</a>
+
+<a href="settings.html">⚙ Settings</a>
+
+</div>
+
+<div class="content">
+
+<h2>Welcome Back</h2>
+
+<p>Create your own football universe.</p>
+
+<br>
+
+<div class="cards">
+
+<div class="dashboardCard">
+
+<h3>👥 Teams</h3>
+
+<h1 id="teamCount">0</h1>
+
+</div>
+
+<div class="dashboardCard">
+
+<h3>🏆 Leagues</h3>
+
+<h1 id="leagueCount">0</h1>
+
+</div>
+
+<div class="dashboardCard">
+
+<h3>📅 Fixtures</h3>
+
+<h1 id="fixtureCount">0</h1>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="storage.js"></script>
+<script src="app.js"></script>
+<script>
+
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register("service-worker.js");
+
+}
+
+</script>
+</body>
+
+</html>
