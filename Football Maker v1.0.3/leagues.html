@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Football Maker - Leagues</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏆 Football Maker</h1>
+
+<h3>League Manager</h3>
+
+</header>
+
+<nav>
+
+<a href="index.html"><button>🏠 Home</button></a>
+
+<a href="teams.html"><button>👥 Teams</button></a>
+
+<a href="leagues.html"><button>🏆 Leagues</button></a>
+
+<a href="tournaments.html"><button>🥇 Tournaments</button></a>
+
+<a href="fixtures.html"><button>📅 Fixtures</button></a>
+
+<a href="settings.html"><button>⚙️ Settings</button></a>
+
+</nav>
+
+<div class="page">
+
+<div class="card">
+
+<h2>Create League</h2>
+
+<input
+id="leagueName"
+type="text"
+placeholder="League Name">
+
+<input
+id="leagueCountry"
+type="text"
+placeholder="Country">
+
+<label>League Logo</label>
+
+<input
+id="leagueLogo"
+type="file"
+accept="image/*">
+
+<h3>Select Teams</h3>
+
+<p>Choose the teams to include.</p>
+
+<div id="teamSelection"></div>
+
+<br>
+
+<button id="createLeague">
+
+Create League
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Your Leagues</h2>
+
+<div
+
+id="leagueContainer"
+
+class="teamGrid">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="storage.js"></script>
+
+<script src="leagues.js"></script>
+
+</body>
+
+</html>

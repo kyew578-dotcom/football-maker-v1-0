@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Football Maker - Fixtures</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>⚽ Football Maker</h1>
+
+<h3>Fixture Generator</h3>
+
+</header>
+
+<nav>
+
+<a href="index.html"><button>🏠 Home</button></a>
+
+<a href="teams.html"><button>👥 Teams</button></a>
+
+<a href="leagues.html"><button>🏆 Leagues</button></a>
+
+<a href="tournaments.html"><button>🥇 Tournaments</button></a>
+
+<a href="fixtures.html"><button>📅 Fixtures</button></a>
+
+<a href="settings.html"><button>⚙️ Settings</button></a>
+
+</nav>
+
+<div class="page">
+
+<div class="card">
+
+<h2>Select League</h2>
+
+<select id="leagueSelect">
+
+<option value="">Choose League</option>
+
+</select>
+
+<br><br>
+
+<button id="generateFixtures">
+
+Generate Fixtures
+
+<br><br>
+
+<button id="simulateSeason">
+
+⚽ Simulate Season
+
+</button>
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Fixtures</h2>
+
+<div id="fixtureList"></div>
+
+</div>
+
+</div>
+
+<script src="storage.js"></script>
+<script src="fixtures.js"></script>
+
+</body>
+
+</html>

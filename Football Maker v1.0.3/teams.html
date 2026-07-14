@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Football Maker - Teams</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>⚽ Football Maker</h1>
+
+<h3>Team Manager</h3>
+
+</header>
+
+<nav>
+
+<a href="index.html"><button>🏠 Home</button></a>
+
+<a href="teams.html"><button>👥 Teams</button></a>
+
+<a href="leagues.html"><button>🏆 Leagues</button></a>
+
+<a href="tournaments.html"><button>🥇 Tournaments</button></a>
+
+<a href="fixtures.html"><button>📅 Fixtures</button></a>
+
+<a href="settings.html"><button>⚙️ Settings</button></a>
+
+</nav>
+
+<div class="page">
+
+<div class="card">
+
+<h2>Create Team</h2>
+
+<br>
+
+<input
+id="teamName"
+type="text"
+placeholder="Team Name">
+
+<input
+id="stadiumName"
+type="text"
+placeholder="Stadium Name">
+
+<input
+id="country"
+type="text"
+placeholder="Country">
+
+<label>Team Strength</label>
+
+<input
+id="strength"
+type="range"
+min="1"
+max="100"
+value="50">
+
+<p>
+
+Strength:
+<span id="strengthValue">50</span>
+
+</p>
+
+<label>Primary Colour</label>
+
+<input
+id="primaryColour"
+type="color"
+value="#1565c0">
+
+<label>Secondary Colour</label>
+
+<input
+id="secondaryColour"
+type="color"
+value="#ffffff">
+
+<input
+id="budget"
+type="number"
+placeholder="Budget (£)">
+
+<label>Team Badge</label>
+
+<input
+id="badge"
+type="file"
+accept="image/*">
+
+<br><br>
+
+<button id="createTeam">
+
+Create Team
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Your Teams</h2>
+
+<br>
+
+<input
+
+id="search"
+
+type="text"
+
+placeholder="Search Teams...">
+
+<br><br>
+
+<div
+
+id="teamContainer"
+
+class="teamGrid">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="storage.js"></script>
+
+<script src="teams.js"></script>
+
+</body>
+
+</html>
